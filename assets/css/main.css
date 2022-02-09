@@ -1,24 +1,55 @@
-* {
+:root {
+  --red: #e50914;
+  --black: #141414;
+  --title: #aaa;
+}
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  outline: 0;
+  box-sizing: inherit;
+}
+
+html {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 body {
   background: var(--black);
   font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  max-width: 115rem;
+  margin: 0 auto;
 }
 
 a {
   text-decoration: none;
 }
 
-:root {
-  --red: #e50914;
-  --black: #141414;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .container h2 {
   color: var(--red);
+  font-weight: 700;
+  font-size: 3.6rem;
+}
+
+.container nav a {
+  color: var(--title);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  transition: all 0.2s ease-in-out;
+  margin-right: 1rem;
+}
+
+.container nav a:hover {
+  color: #fff;
 }
