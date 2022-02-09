@@ -22,7 +22,7 @@ body {
   background: var(--black);
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
-  max-width: 115rem;
+  max-width: 120rem;
   margin: 0 auto;
   color: var(--text);
 }
@@ -60,7 +60,7 @@ header nav a:hover {
 
 /* Main */
 .main-movie {
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: 1.6rem;
   background: url("/assets/img/main-movie.png");
   background-size: cover;
@@ -75,13 +75,13 @@ header nav a:hover {
 .main-movie .container h3 {
   font-size: 3.2rem;
   padding: 1rem;
-  width: 57.5rem;
+  width: 60%;
 }
 
 .main-movie p {
   padding: 1rem;
   margin-top: 1rem;
-  max-width: 57.5rem;
+  max-width: 60%;
 }
 
 .main-movie .buttons {
@@ -90,12 +90,15 @@ header nav a:hover {
 }
 
 .main-movie .action {
+  font-size: 1.6rem;
   cursor: pointer;
   justify-content: center;
   padding: 1rem 2rem;
   border-radius: 0.4rem;
   border: none;
   color: var(--black);
+  background-color: rgba(255, 255, 255, 1);
+  transition: 0.5s;
 }
 
 .main-movie .action span {
@@ -103,17 +106,37 @@ header nav a:hover {
   margin-right: 0.5rem;
 }
 
+.main-movie .action:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
 .main-movie .info {
+  font-size: 1.6rem;
   cursor: pointer;
   margin-left: 0.7rem;
   padding: 1rem 2rem;
   border-radius: 0.4rem;
   border: none;
-  background: #817a7a;
   color: var(--text);
+  background-color: rgba(155, 155, 155, 0.9);
+  transition: 0.5s;
 }
 
 .main-movie .info span {
   font-size: 1.8rem;
   margin-right: 0.5rem;
+}
+
+.main-movie .info:hover {
+  background-color: rgba(155, 155, 155, 0.5);
+}
+
+.main-movie .footer {
+  margin-top: 3rem;
+}
+
+.box-movie {
+  height: 100%;
+  width: 100%;
+  display: block;
 }
