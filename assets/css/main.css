@@ -2,6 +2,7 @@
   --red: #e50914;
   --black: #141414;
   --title: #aaa;
+  --text: #fff;
 }
 
 *,
@@ -23,25 +24,28 @@ body {
   font-size: 1.6rem;
   max-width: 115rem;
   margin: 0 auto;
+  color: var(--text);
 }
 
 a {
   text-decoration: none;
 }
 
-.container {
+/* Header */
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 2rem 1rem;
 }
 
-.container h2 {
+header h2 {
   color: var(--red);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 3.6rem;
 }
 
-.container nav a {
+header nav a {
   color: var(--title);
   font-size: 1.6rem;
   font-weight: 700;
@@ -50,6 +54,66 @@ a {
   margin-right: 1rem;
 }
 
-.container nav a:hover {
+header nav a:hover {
   color: #fff;
+}
+
+/* Main */
+.main-movie {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  background: url("/assets/img/main-movie.png");
+  background-size: cover;
+  height: 40rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-movie .container h3 {
+  font-size: 3.2rem;
+  padding: 1rem;
+  width: 57.5rem;
+}
+
+.main-movie p {
+  padding: 1rem;
+  margin-top: 1rem;
+  max-width: 57.5rem;
+}
+
+.main-movie .buttons {
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+.main-movie .action {
+  cursor: pointer;
+  justify-content: center;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  border: none;
+  color: var(--black);
+}
+
+.main-movie .action span {
+  font-size: 1.8rem;
+  margin-right: 0.5rem;
+}
+
+.main-movie .info {
+  cursor: pointer;
+  margin-left: 0.7rem;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  border: none;
+  background: #817a7a;
+  color: var(--text);
+}
+
+.main-movie .info span {
+  font-size: 1.8rem;
+  margin-right: 0.5rem;
 }
